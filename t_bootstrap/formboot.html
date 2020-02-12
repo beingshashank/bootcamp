@@ -1,93 +1,133 @@
-<!-- Material form register -->
-<div class="card">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boot strap Practice</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <h5 class="card-header info-color white-text text-center py-4">
-        <strong>Sign up</strong>
-    </h5>
+<style>
+    .container-fluid{
+        background-color:black;
+    }
+    .container{
+        /* background-color: white; */
+    }
+    .top{
+        background-color:#2a2a2b;
+        color: white;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .middle{
+             background-color: ivory;
+    }
+    .box1{
+           padding: 50px;
+           margin:25px;
+           background-color: black;
+           font-size: 20px;
+           color: blanchedalmond;
+           height: 280px;
+           text-align: center; align-content: center;
+	        display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
 
-    <!--Card content-->
-    <div class="card-body px-lg-5 pt-0">
+    }
+    .message{
+          margin: 10px;
+          background-color:#ada9a8;
+          font-size: 15px;
+          color:#2a2a2b;
+          padding: 4px;
+          height: auto;
+          width: 93%;
 
-        <!-- Form -->
-        <form class="text-center" style="color: #757575;" action="#!">
+    }
+    h4{
+        margin: 7px;
+    }
+    hr{
+        color:gray;
+    }
+    .row{
+        padding: 10px;
+           margin:25px;
+           background-color:#d5dbd6;
+           font-size: 20px;
+           color: blanchedalmond;
+           height: 280px;
+           text-align: center; align-content: center;
+           width: 95%;
 
-            <div class="form-row">
-                <div class="col">
-                    <!-- First name -->
-                    <div class="md-form">
-                        <input type="text" id="materialRegisterFormFirstName" class="form-control">
-                        <label for="materialRegisterFormFirstName">First name</label>
-                    </div>
-                </div>
-                <div class="col">
-                    <!-- Last name -->
-                    <div class="md-form">
-                        <input type="email" id="materialRegisterFormLastName" class="form-control">
-                        <label for="materialRegisterFormLastName">Last name</label>
-                    </div>
-                </div>
+    }
+    .col-sm-3{
+        background-color: black;
+        text-align: center; align-content: center;
+	        display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            color: aliceblue;
+            font-size: 20px;
+            margin-left: 4px;;
+            height:260px;
+            width:253px;
+     }
+    .headings{
+                margin-left: 45px;
+    }
+    .bottom
+    {
+        background-color:#2a2a2b;
+        color: white;
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+ </head>
+
+    <body>
+        <div class="container-fluid">
+        <div class="container">
+        <div class="container-fluid top">
+         <h4>TO THE NEW </h4>
+         <br><br>
+         <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">TEXT LINK</a></li>
+                <li><a href="#"> TEXT LINK</a></li>
+                <li><a href="#">TEXT LINK</a></li>
+                <li><a href="#">TEXT LINK</a></li>
+                <li><a href="#">TEXT LINK</a></li>
+
+              </ul>
             </div>
-
-            <!-- E-mail -->
-            <div class="md-form mt-0">
-                <input type="email" id="materialRegisterFormEmail" class="form-control">
-                <label for="materialRegisterFormEmail">E-mail</label>
+          </nav>
+        </div>
+        <div class="container-fluid middle">
+         <div class="box1">960 x 360 px</div>
+         <div class="container">
+            <div class="message"> As engineers, we were going to be in a position to change the world – not just study it</div>
             </div>
-
-            <!-- Password -->
-            <div class="md-form">
-                <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
-                <label for="materialRegisterFormPassword">Password</label>
-                <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-                    At least 8 characters and 1 digit
-                </small>
-            </div>
-
-            <!-- Phone number -->
-            <div class="md-form">
-                <input type="password" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
-                <label for="materialRegisterFormPhone">Phone number</label>
-                <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-                    Optional - for two step authentication
-                </small>
-            </div>
-
-            <!-- Newsletter -->
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
-                <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our newsletter</label>
-            </div>
-
-            <!-- Sign up button -->
-            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
-
-            <!-- Social register -->
-            <p>or sign up with:</p>
-
-            <a type="button" class="btn-floating btn-fb btn-sm">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a type="button" class="btn-floating btn-tw btn-sm">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a type="button" class="btn-floating btn-li btn-sm">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a type="button" class="btn-floating btn-git btn-sm">
-                <i class="fab fa-github"></i>
-            </a>
-
+            <br>
+            <h4 class="headings">LATEST FROM GALLERY</h4>
             <hr>
+            <div class="row">
+            <div class="col-sm-3" title="image box"> 215x315 px</div>
+            <div class="col-sm-3">215x315 px</div>
+            <div class="col-sm-3">215x315 px</div>
+            <div class="col-sm-3">215x315 px</div>
+            </div>
+        </div>
+        <div class=" container-fluid bottom "> copyright &copy; 2009-2017 To THE NEW     </div>
 
-            <!-- Terms of service -->
-            <p>By clicking
-                <em>Sign up</em> you agree to our
-                <a href="" target="_blank">terms of service</a>
-
-        </form>
-        <!-- Form -->
-
-    </div>
-
-</div>
-<!-- Material form register -->
+        </div>
+        </div>
+    </body>
+</html>
